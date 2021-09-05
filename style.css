@@ -1,0 +1,57 @@
+
+
+body{
+    background-image: linear-gradient( 113.5deg,  rgba(234,234,234,1) 22.3%, rgba(201,234,211,1) 56.6%, rgba(255,180,189,1) 90.9% );
+      display:flex;
+      align-items: center;
+      justify-content:center;
+      flex-direction:column;
+      font-family: 'Lobster',cursive;
+      
+  }
+  
+  svg {
+         box-shadow: 4px 4px 6px rgba(0,0,0,0.9);
+        background-color:#F7F4E4;
+        font-size: 14px;
+      }
+
+  #canvas{
+      min-width: 1000px;
+      min-height: 600px;
+  }
+
+  #legend{
+      max-width:150px;
+      min-height:300px;
+      font-family: 'Lobster',cursive;
+  }
+
+  #tooltip {
+    visibility: hidden;
+    width : auto;
+    height: auto;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.9)
+  }
+
+  #title {
+      font-size: 50px;
+      font-family: 'Lobster',cursive;
+  }
+
+  #flex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+#description {
+    font-family: 'Lobster',cursive;
+    font-size: 26px;
+}
+
+.tile:hover{
+fill: "2E3332"
+}
