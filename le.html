@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Map</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2 id="title">Video Game Sales Data Top 100</h2>
+    <div id = "tooltip"></div>
+    <div id="description">Sales Volume</div>
+    <div id="flex">
+      <div id="leftside">
+    <svg id = "canvas">
+        </svg>
+      </div>
+      <div id = "rightside">
+        <svg id = "legend">
+            <g>
+              <rect class="legend-item" x = "10" y = "10" width = "40" height = "40" fill = "#C29BA3"> </rect>
+              <text x = "50" y = "30">Wii</text>
+            </g>
+            <g>
+            <rect class="legend-item" x = "10" y = "50" width = "40" height = "40" fill = "#FFE4C9"> </rect>
+              <text x = "50" y = "70"> NES</text>
+            </g>
+             <rect class="legend-item" x = "10" y = "90" width = "40" height = "40" fill = "#B7EAF7"> </rect>
+            <text x = "50" y = "110">GB</text>
+            <g>
+            <rect class="legend-item" x = "10" y = "130" width = "40" height = "40" fill = "#8A9BA7"> </rect>
+              <text x = "50" y = "150">DS</text>
+            </g>
+            <g>
+                <rect class="legend-item" x = "10" y = "170" width = "40" height = "40" fill = "#E5BFB7"> </rect>
+                  <text x = "50" y = "190">X360</text>
+                </g>
+                <g>
+                    <rect class="legend-item" x = "10" y = "210" width = "40" height = "40" fill = "CAB3C1"> </rect>
+                      <text x = "50" y = "230">PS3</text>
+                    </g>
+                    <g>
+                        <rect class="legend-item" x = "10" y = "250" width = "40" height = "40" fill = "#D7E2EA"> </rect>
+                          <text x = "50" y = "270">Else</text>
+                        </g>
+          </svg>
+        </div>
+        </div>
+</body>
+<script defer src="script.js"></script>
+<script src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
